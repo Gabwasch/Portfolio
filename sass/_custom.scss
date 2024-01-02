@@ -1,0 +1,48 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+/* definindo variáveis para cores */
+$primary: #49006b;
+$secondary: #846deb;
+$tertiary: #68d9f5;
+$success: #4d9b35;
+$info: #A1C7E0;
+$warning: #eb8634;
+$danger: #E3371E;
+$light: #ecf1f1;
+$dark: #232424;
+$link-color: #004675;
+$link-hover-color: #52ffe2;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "tertiary":   $tertiary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "link-color": $link-color,
+  "link-hover-color": $link-hover-color,
+);
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+#logo{
+  height: 60px;
+}
+
+body{
+  background: $primary
+}
+
+.box-shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
